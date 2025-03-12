@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ocean Academy</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/service.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/popup.css"> <!-- Link to the new Popup CSS file -->
+</head>
+<body>
+    <nav class="nav-bar">
+        <a href="#" class="logo-link">
+            <img src="images/oceanlogo1.jpg" alt="Ocean Logo" class="ocean-logo">
+        </a>
+        <div class="nav-buttons">
+            <a href="index.html" target="_parent"><button class="logo-nav" id="home">Home</button></a>
+            <a href="services.html" target="_parent"><button class="logo-nav" id="services">Services</button></a>
+            <a href="price.html" target="_parent"><button class="logo-nav" id="prices">Prices</button></a>
+            <a href="aboutus.html" target="_parent"><button class="logo-nav" id="about_us">About Us</button></a>
+            <a href="#" onclick="showLocationPopup()">
+                <button class="logo-nav" id="location">Location</button>
+            </a>
+            <div id="location-popup" class="popup">
+                <div class="popup-content">
+                    <span class="close" onclick="closeLocationPopup()">&times;</span>
+                    <h2 id="location_popup_title">Select Your Location</h2>
+                    <p id="location_popup_message">Please choose a location to proceed:</p>
+                    <select id="location-select">
+                        <option value="Bir Hassan" id="location1">Bir Hassan</option>
+                        <option value="Hamra" id="location2">Hamra</option>
+                    </select>
+                    <button onclick="goToSelectedLocation()" id="go" class="join-button">Go</button>
+                </div>
+            </div>
+            <button id="language-switch" class="logo-nav">للغة العربية</button>
+        </div>
+    </nav>
+
+    <div class="gallery-container">
+        <div class="header-container">
+            <h1 id="imageHeader">Star</h1>
+            <div class="button-container">
+                <button id="nextButton" class="next-button">Next Image</button>
+            </div>
+        </div>
+        <div class="image-container" id="imageContainer">
+            <img src="images/star.webp" alt="star" class="active">
+            <img src="images/freestyle.webp" alt="freestyle" class="hidden">
+            <img src="images/backstroke.jpg" alt="backstroke" class="hidden">
+            <img src="images/breaststroke.webp" alt="breaststroke" class="hidden">
+            <img src="images/butterfly.jpg" alt="butterfly" class="hidden">
+        </div>
+        <div class="youtube-link" id="youtubeLink"  ></div>
+    </div>
+
+    <script src="javascrip/script.js"></script>
+    <script src="javascrip/language.js"></script>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="images/oceanlogo1.jpg" alt="Ocean Academy Logo" class="footer-logo-img">
+            </div>
+            <div class="footer-icons">
+                <a href="https://www.instagram.com/ocean_swimming_academy?igsh=enRjem41YXc3eG41&utm_source=qr" target="_blank">
+                    <img src="images/instalogo.png" alt="Instagram" class="footer-icon">
+                </a>
+                <a href="https://www.facebook.com/share/12AdYo2CzZE/?mibextid=wwXIfr" target="_blank">
+                    <img src="images/fb-logo.png" alt="Facebook" class="footer-icon">
+                </a>
+                <a href="tel:+96170884228">
+                    <img src="images/contact.png" alt="Phone" class="footer-icon">
+                </a>
+                <a href="mailto:mohamad-merhee@outlook.com">
+                    <img src="images/email.png" alt="Email" class="footer-icon">
+                </a>
+            </div>
+        </div>
+        <p class="footer-text" id="footer_text">© 2025 Ocean Academy. All rights reserved. Ibrahim Abdallah</p>
+    </footer>
+
+    <style>
+        .gallery-container {
+            display: flex; /* Use flexbox for layout */
+            align-items: center; /* Center items vertically */
+            padding: 20px; /* Add padding around the gallery */
+            background-color: #f4f4f4; /* Light background for contrast */
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+        }
+
+      
+        .header-container h1 {
+            color: #007BFF; /* Primary color for header */
+            font-size: 2em; /* Larger font size for emphasis */
+            margin-bottom: 10px; /* Space below the header */
+        }
+
+        .button-container {
+            margin-top: 10px; /* Space above the button */
+        }
+
+        .next-button {
+            padding: 10px 20px; /* Padding for button */
+            background-color: #007BFF; /* Button background color */
+            color: white; /* Button text color */
+            border: none; /* Remove border */
+            border-radius: 5px; /* Rounded corners */
+            cursor: pointer; /* Pointer cursor on hover */
+            transition: background-color 0.3s; /* Smooth transition */
+        }
+
+        .next-button:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+        }
+
+        .image-container {
+            display: flex; /* Use flexbox for images */
+            flex-direction: column; /* Stack images vertically */
+            align-items: center; /* Center images */
+            flex: 2; /* Allow images to take more space */
+        }
+
+        .image-container img {
+            display: none; /* Hide all images by default */
+            max-width: 100%; /* Responsive image size */
+            border-radius: 10px; /* Rounded corners for images */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow for images */
+        }
+
+        .image-container img.active {
+            display: block; /* Show active image */
+        }
+
+        .youtube-link {
+            margin-top: 20px; /* Space above the YouTube link */
+            text-align: center; /* Center the link */
+        }
+
+        .footer {
+            background-color: #2c3e50; /* Dark background color */
+            color: #ecf0f1; /* Light text color */
+            padding: 15px 0; /* Padding for top and bottom */
+            text-align: center; /* Center the text */
+        }
+
+        .footer-content {
+            display: flex; /* Use flexbox for layout */
+            flex-direction: column; /* Stack items vertically */
+            align-items: center; /* Center items horizontally */
+        }
+
+        .footer-logo {
+            margin-bottom: 10px; /* Space between logo and icons */
+        }
+
+        .footer-logo-img {
+            width: 100px; /* Set logo width */
+            height: auto; /* Maintain aspect ratio */
+        }
+
+        .footer-icons {
+            display: flex; /* Use flexbox for icons */
+            justify-content: center; /* Center the icons */
+            gap: 15px; /* Space between icons */
+        }
+
+        .footer-icon {
+            width: 60px; /* Set the width of the icons */
+            height: 60px; /* Maintain aspect ratio */
+            opacity: 0.8; /* Optional: make icons slightly transparent */
+            transition: opacity 0.3s; /* Smooth transition for hover effect */
+        }
+
+        .footer-icon:hover {
+            opacity: 1; /* Full opacity on hover */
+        }
+
+        .footer-text {
+            margin-top: 15px; /* Space above the copyright text */
+            font-size: 14px; /* Font size for copyright text */
+        }
+    </style>
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title id="title">Ocean Academy</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/index.css"> <!-- Link to the new CSS file -->
+    <link rel="stylesheet" href="css/popup.css"> <!-- Link to the new Popup CSS file -->
+</head>
+<body>
+    <nav class="nav-bar">
+        <a href="#" class="logo-link">
+            <img src="images/oceanlogo1.jpg" alt="Ocean Logo" class="ocean-logo">
+        </a>
+        <div class="nav-buttons">
+            <a href="index.html" target="_parent"><button class="logo-nav" id="home">Home</button></a>
+            <a href="services.html" target="_parent"><button class="logo-nav" id="services">Services</button></a>
+            <a href="price.html" target="_parent"><button class="logo-nav" id="prices">Prices</button></a>
+            <a href="aboutus.html" target="_parent"><button class="logo-nav" id="about_us">About Us</button></a>
+            <a href="#" onclick="showLocationPopup()">
+                <button class="logo-nav" id="location">Location</button>
+            </a>
+            <div id="location-popup" class="popup">
+                <div class="popup-content">
+                    <span class="close" onclick="closeLocationPopup()">&times;</span>
+                    <h2 id="location_popup_title">Select Your Location</h2>
+                    <p id="location_popup_message">Please choose a location to proceed:</p>
+                    <select id="location-select">
+                        <option value="Bir Hassan" id="location1">Bir Hassan</option>
+                        <option value="Hamra" id="location2">Hamra</option>
+                    </select>
+                    <button onclick="goToSelectedLocation()" id="go" class="join-button">Go</button>
+                </div>
+            </div>
+            <button id="language-switch" class="logo-nav">للغة العربية</button>
+        </div>
+    </nav>
+
+    <!-- Slideshow Section -->
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="images/background.jpg" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <img src="images/slideshow1.jpg" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <img src="images/slideshow2.jpg" style="width:100%">
+        </div>
+      
+        <h1 id="welcome">Welcome to Ocean Academy</h1>
+        <p id="welcome_message" style="text-align: center;">Your journey to fitness and swimming excellence starts here!</p>
+        <button onclick="showPopup()" class="join-button" id="join_button">Join Us Today!</button>
+    </div>
+
+    <!-- Popup Section -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <h2 id="popup_title">Thank You for Joining Us!</h2>
+            <p id="popup_message">We are excited to have you on board. Please scroll down and continue the signup process to continue your tour among our website.</p>
+        </div>
+    </div>
+
+    <div class="featured-programs fade-in">
+        <h2 id="featured_programs">Featured Programs</h2>
+        <div class="program">
+            <h3 id="swimming_lessons">Swimming Lessons</h3>
+            <p id="swimming_lessons_description">Join our swimming lessons for all ages and skill levels.</p>
+        </div>
+        <div class="program">
+            <h3 id="fitness_classes">Fitness Classes</h3>
+            <p id="fitness_classes_description">Participate in our diverse fitness classes designed for everyone.</p>
+        </div>
+        <div class="program">
+            <h3 id="karate_classes">Karate Classes</h3>
+            <p id="karate_classes_description">Learn self-defense and discipline through our karate classes.</p>
+        </div>
+    </div>
+
+    <div class="testimonials fade-in">
+        <h2 id="testimonials_title">Parents And Students Feedback</h2>
+        <div class="testimonial">
+            <blockquote>
+                <p id="testimonial_1">"Ocean Academy has transformed my swimming skills!" - Sarah</p>
+                <p class="hidden-feedback" id="hidden_feedback_1">"I feel more confident in the water now!"</p>
+            </blockquote>
+        </div>
+        <div class="testimonial">
+            <blockquote>
+                <p id="testimonial_2">"The fitness classes are fun and engaging!" - Aya</p>
+                <p class="hidden-feedback" id="hidden_feedback_2">"I love the variety of classes offered!"</p>
+            </blockquote>
+        </div>
+        <div class="testimonial">
+            <blockquote>
+                <p id="testimonial_3">"The instructors are incredibly supportive and knowledgeable!" - John</p>
+                <p class="hidden-feedback" id="hidden_feedback_3">"They really care about our progress!"</p>
+            </blockquote>
+        </div>
+        <div class="testimonial">
+            <blockquote>
+                <p id="testimonial_4">"My child has gained so much confidence in the water!" - Emily</p>
+                <p class="hidden-feedback" id="hidden_feedback_4">"The instructors are amazing with kids!"</p>
+            </blockquote>
+        </div>
+        <div class="testimonial">
+            <blockquote>
+                <p id="testimonial_5">"The community at Ocean Academy is welcoming and encouraging!" - Mark</p>
+                <p class="hidden-feedback" id="hidden_feedback_5">"I made so many friends here!"</p>
+            </blockquote>
+        </div>
+    </div>
+    
+    <div class="call-to-action fade-in">
+        <h2 id="call_to_action">Join Us Today!</h2>
+        <p id="call_to_action_description" >Sign up now to start your journey towards health and wellness.</p>
+        <button onclick="location.href='signup.html'" class="join-button" id="sign_up_button">Sign Up</button>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="images/oceanlogo1.jpg" alt="Ocean Academy Logo" class="footer-logo-img">
+            </div>
+            <div class="footer-icons">
+                <a href="https://www.instagram.com/ocean_swimming_academy?igsh=enRjem41YXc3eG41&utm_source=qr" target="_blank">
+                    <img src="images/instalogo.png" alt="Instagram" class="footer-icon">
+                </a>
+                <a href="https://www.facebook.com/share/12AdYo2CzZE/?mibextid=wwXIfr" target="_blank">
+                    <img src="images/fb-logo.png" alt="Facebook" class="footer-icon">
+                </a>
+                <a href="tel:+96170884228">
+                    <img src="images/contact.png" alt="Phone" class="footer-icon">
+                </a>
+                <a href="mailto:mohamad-merhee@outlook.com">
+                    <img src="images/email.png" alt="Email" class="footer-icon">
+                </a>
+            </div>
+        </div>
+        <p class="footer-text" id="footer_text">© 2025 Ocean Academy. All rights reserved. Ibrahim Abdallah.(76466642).</p>
+    </footer>
+
+    <script src="javascrip/language.js"></script>
+    <script src="javascrip/slideshow.js"></script> <!-- Link to the new JavaScript file -->
+    <script src="javascrip/popup.js"></script> <!-- Link to the new Popup JavaScript file -->
+</body>
+</html>

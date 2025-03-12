@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ocean Academy</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/price.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/popup.css"> <!-- Link to the new Popup CSS file -->
+</head>
+<body>
+    <nav class="nav-bar">
+        <a href="#" class="logo-link">
+            <img src="images/oceanlogo1.jpg" alt="Ocean Logo" class="ocean-logo">
+        </a>
+        <div class="nav-buttons">
+            <a href="index.html" target="_parent"><button class="logo-nav" id="home">Home</button></a>
+            <a href="services.html" target="_parent"><button class="logo-nav" id="services">Services</button></a>
+            <a href="price.html" target="_parent"><button class="logo-nav" id="prices">Prices</button></a>
+            <a href="aboutus.html" target="_parent"><button class="logo-nav" id="about_us">About Us</button></a>
+            <a href="#" onclick="showLocationPopup()">
+                <button class="logo-nav" id="location">Location</button>
+            </a>
+            <div id="location-popup" class="popup">
+                <div class="popup-content">
+                    <span class="close" onclick="closeLocationPopup()">&times;</span>
+                    <h2 id="location_popup_title">Select Your Location</h2>
+                    <p id="location_popup_message">Please choose a location to proceed:</p>
+                    <select id="location-select">
+                        <option value="Bir Hassan" id="location1">Bir Hassan</option>
+                        <option value="Hamra" id="location2">Hamra</option>
+                    </select>
+                    <button onclick="goToSelectedLocation()" id="go" class="join-button">Go</button>
+                </div>
+            </div>
+            <button id="language-switch" class="logo-nav">للغة العربية</button>
+        </div>
+    </nav>
+    
+    <h2 id="price_list">OCEAN Swimming Academy Price List</h2>
+    <label for="exchangeRate" id="exchange_rate_label">Enter Exchange Rate (1 USD to LBP): </label>
+    <input type="number" id="exchangeRate" value="90000" onchange="updatePrices()">
+
+    <table>
+        <tr>
+            <th id="category">Category</th>
+            <th id="description">Description</th>
+            <th>Price (USD / LBP)</th>
+        </tr>
+        <tr>
+            <td rowspan="5" id="private_session">PRIVATE SESSION</td>
+            <td id="private_session_1">1 Session</td>
+            <td class="price" data-usd="20">$30 / <span class="lbp"></span></td>
+        </tr>
+        <tr>
+            <td id="private_session_4">4 Sessions</td>
+            <td class="price" data-usd="80">$120 / <span class="lbp"></span></td>
+        </tr>
+        <tr>
+            <td id="private_session_8">8 Sessions</td>
+            <td class="price" data-usd="160">$240 / <span class="lbp"></span></td>
+        </tr>
+        <tr>
+            <td id="private_session_2_persons">1 Session (2 Persons)</td>
+            <td class="price" data-usd="30">$40 / <span class="lbp"></span></td>
+        </tr>
+        <tr>
+            <td colspan="2"></td>
+        </tr>
+        <tr>
+            <td rowspan="3" id="group_session">GROUP SESSION</td>
+            <td id="group_session_4">4 Sessions</td>
+            <td class="price" data-usd="40">$60 / <span class="lbp"></span></td>
+        </tr>
+        <tr>
+            <td id="group_session_8">8 Sessions</td>
+            <td class="price" data-usd="70">$120 / <span class="lbp"></span></td>
+        </tr>
+        <tr>
+            <td id="group_session_12">12 Sessions</td>
+            <td class="price" data-usd="100">$150 / <span class="lbp"></span></td>
+        </tr>
+        <tr>
+            <td rowspan="3" id="gym_price">GYM PRICE</td>
+            <td id="gym_price_1_month">1 Month</td>
+            <td class="price" data-usd="35">$40 / <span class="lbp"></span></td>
+        </tr>
+        <tr>
+            <td id="gym_price_10_visit">10 Visit</td>
+            <td class="price" data-usd="20">$30 / <span class="lbp"></span></td>
+        </tr>
+        <tr>
+            <td id="gym_price_pt_session">PT Session</td>
+            <td class="price" data-usd="15">$20 / <span class="lbp"></span></td>
+        </tr>
+        <tr>
+            <td id="karate">KARATE</td>
+            <td id="karate_1_month">1 Month</td>
+            <td class="price" data-usd="25">$35 / <span class="lbp"></span></td>
+        </tr>
+    </table>
+
+    <script src="javascrip/money.js"></script>
+    <script src="javascrip/language.js"></script>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="images/oceanlogo1.jpg" alt="Ocean Academy Logo" class="footer-logo-img">
+            </div>
+            <div class="footer-icons">
+                <a href="https://www.instagram.com/ocean_swimming_academy?igsh=enRjem41YXc3eG41&utm_source=qr" target="_blank">
+                    <img src="images/instalogo.png" alt="Instagram" class="footer-icon">
+                </a>
+                <a href="https://www.facebook.com/share/12AdYo2CzZE/?mibextid=wwXIfr" target="_blank">
+                    <img src="images/fb-logo.png" alt="Facebook" class="footer-icon">
+                </a>
+                <a href="tel:+96170884228">
+                    <img src="images/contact.png" alt="Phone" class="footer-icon">
+                </a>
+                <a href="mailto:mohamad-merhee@outlook.com">
+                    <img src="images/email.png" alt="Email" class="footer-icon">
+                </a>
+            </div>
+        </div>
+        <p class="footer-text" id="footer_text">© 2025 Ocean Academy. All rights reserved. Ibrahim Abdallah</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>About Us - Ocean Academy</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/aboutus.css"> <!-- Link to the new CSS file -->
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/popup.css"> <!-- Link to the new Popup CSS file -->
+</head>
+<body>
+    <nav class="nav-bar">
+        <a href="#" class="logo-link">
+            <img src="images/oceanlogo1.jpg" alt="Ocean Logo" class="ocean-logo">
+        </a>
+        <div class="nav-buttons">
+            <a href="index.html" target="_parent"><button class="logo-nav" id="home">Home</button></a>
+            <a href="services.html" target="_parent"><button class="logo-nav" id="services">Services</button></a>
+            <a href="price.html" target="_parent"><button class="logo-nav" id="prices">Prices</button></a>
+            <a href="aboutus.html" target="_parent"><button class="logo-nav" id="about_us">About Us</button></a>
+            <a href="#" onclick="showLocationPopup()">
+                <button class="logo-nav" id="location">Location</button>
+            </a>
+            <div id="location-popup" class="popup">
+                <div class="popup-content">
+                    <span class="close" onclick="closeLocationPopup()">&times;</span>
+                    <h2 id="location_popup_title">Select Your Location</h2>
+                    <p id="location_popup_message">Please choose a location to proceed:</p>
+                    <select id="location-select">
+                        <option value="Bir Hassan" id="location1">Bir Hassan</option>
+                        <option value="Hamra" id="location2">Hamra</option>
+                    </select>
+                    <button onclick="goToSelectedLocation()" id="go" class="join-button">Go</button>
+                </div>
+            </div>
+            <button id="language-switch" class="logo-nav">للغة العربية</button>
+        </div>
+    </nav>
+
+    <div class="about-container">
+        <h1 id="about-title">About Ocean Academy</h1>
+        <p id="about-description">Welcome to Ocean Academy, a premier institution dedicated to teaching swimming and fitness to individuals of all ages, including women, men, and children. Our academy is built on the foundation of safety, community, and excellence, providing a nurturing environment for everyone to learn and thrive.</p>
+        
+        <div class="mission-vision">
+            <h2 id="mission-title">Our Mission</h2>
+            <p id="mission-description">At Ocean Academy, our mission is to create a safe and supportive space where individuals can learn swimming and engage in fitness activities. We aim to promote health, confidence, and a sense of belonging among our members, regardless of age or skill level.</p>
+            <h2 id="vision-title">Our Vision</h2>
+            <p id="vision-description">We envision being the leading academy for swimming and fitness, recognized for our commitment to excellence, safety, and empowerment. Our goal is to inspire everyone to embrace an active lifestyle and achieve their personal fitness goals.</p>
+        </div>
+
+        <div class="values">
+            <h2 id="values-title">Our Values</h2>
+            <ul id="values-list">
+                <li id="inclusivity"><strong>Inclusivity:</strong> We welcome individuals of all ages and backgrounds to join our programs.</li>
+                <li id="empowerment"><strong>Empowerment:</strong> We empower everyone to take charge of their health and fitness.</li>
+                <li  id="community"><strong>Community:</strong> We foster a sense of community and support among our members.</li>
+                <li id="excellence"><strong>Excellence:</strong> We strive for excellence in all our programs and services.</li>
+                <li id="safety"><strong>Safety:</strong> We prioritize the safety and well-being of our members above all.</li>
+            </ul>
+        </div>
+
+        <div class="gallery">
+            <h2 id="join-title">Join Us Today!</h2>
+            <p id="join-description">Become a part of our vibrant community and start your journey towards health and wellness. We offer a variety of swimming and fitness programs tailored to meet the needs of individuals of all ages.</p>
+            <img src="images/aboutus.jpg" alt="Ocean View" class="gallery-image">
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="images/oceanlogo1.jpg" alt="Ocean Academy Logo" class="footer-logo-img">
+            </div>
+            <div class="footer-icons">
+                <a href="https://www.instagram.com/ocean_swimming_academy?igsh=enRjem41YXc3eG41&utm_source=qr" target="_blank">
+                    <img src="images/instalogo.png" alt="Instagram" class="footer-icon">
+                </a>
+                <a href="https://www.facebook.com/share/12AdYo2CzZE/?mibextid=wwXIfr" target="_blank">
+                    <img src="images/fb-logo.png" alt="Facebook" class="footer-icon">
+                </a>
+                <a href="tel:+96170884228">
+                    <img src="images/contact.png" alt="Phone" class="footer-icon">
+                </a>
+                <a href="mailto:mohamad-merhee@outlook.com">
+                    <img src="images/email.png" alt="Email" class="footer-icon">
+                </a>
+            </div>
+        </div>
+        <p class="footer-text" id="footer_text">© 2025 Ocean Academy. All rights reserved. Ibrahim Abdallah</p>
+    </footer>
+
+    <script src="javascrip/language.js"></script>
+</body>
+</html>

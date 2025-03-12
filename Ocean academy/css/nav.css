@@ -1,0 +1,195 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Navigation Bar Styles */
+.nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:white; /* Ocean blue color */
+    padding: 10px 20px;
+    background-color: aliceblue;
+  
+    
+}
+
+/* Logo Link */
+.logo-link {
+    text-decoration: none; /* Remove underline from link */
+}
+
+/* Logo Styles */
+.ocean-logo {
+    height: 100px; /* Increase logo size */
+    width: auto; /* Maintain aspect ratio */
+    transition: transform 0.3s; /* Smooth scaling effect */
+}
+
+/* Logo Hover Effect */
+.logo-link:hover .ocean-logo {
+    transform: scale(1.1); /* Slightly enlarge logo on hover */
+}
+
+/* Button Styles */
+.nav-buttons {
+    display: flex;
+    gap: 15px; /* Space between buttons */
+}
+
+.logo-nav {
+    background-color: #ffffff; /* White background for buttons */
+    color: #0077cc; 
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 15px; /* Padding for buttons */
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+/* Button Hover Effects */
+.logo-nav:hover {
+    background-color: #005fa3; /* Darker blue on hover */
+    color: #ffffff; /* White text on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-bar {
+        flex-direction: column; /* Stack items vertically on small screens */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    .nav-buttons {
+        flex-direction: column; /* Stack buttons vertically */
+        gap: 10px; /* Space between buttons */
+        width: 100%; /* Full width for buttons */
+    }
+
+    .logo-nav {
+        width: 100%; /* Full width for buttons */
+        text-align: left; /* Align text to the left */
+    }
+}
+h1{
+    text-align: center;
+    padding-top: 40px;
+   
+}
+.logo2{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 50%;
+   
+   
+}
+.background-div {
+    background-image: url('../images/background.jpg'); /* Replace with your background image path */
+    background-size: cover; /* This will cover the entire div */
+    background-position: center; /* This will center the background image */
+    width: 100%; /* Set the width of the div */
+    height: 700px; /* Set the height of the div */
+    display: flex; /* Optional: to center the logo */
+    justify-content: center; /* Optional: to center the logo horizontally */
+    align-items: center; /* Optional: to center the logo vertically */
+   
+}
+.footer {
+    background-color: #2c3e50; /* Dark background color */
+    color: #ecf0f1; /* Light text color */
+    padding: 15px 0; /* Padding for top and bottom */
+    text-align: center; /* Center the text */
+}
+
+.footer-content {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+}
+
+.footer-logo {
+    margin-bottom: 10px; /* Space between logo and icons */
+}
+
+.footer-logo-img {
+    width: 100px; /* Set logo width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.footer-icons {
+    display: flex; /* Use flexbox for icons */
+    justify-content: center; /* Center the icons */
+    gap: 15px; /* Space between icons */
+}
+
+.footer-icon {
+    width: 60px; /* Set the width of the icons */
+    height: 60px; /* Maintain aspect ratio */
+    opacity: 0.8; /* Optional: make icons slightly transparent */
+    transition: opacity 0.3s; /* Smooth transition for hover effect */
+}
+
+.footer-icon:hover {
+    opacity: 1; /* Full opacity on hover */
+}
+
+.footer-text {
+    margin-top: 15px; /* Space above the copyright text */
+    font-size: 14px; /* Font size for copyright text */
+}
+html, body {
+    height: 100%;
+    margin: 0;
+}
+body[lang="ar"] {
+    direction: rtl;
+}
+
+.container {
+    display: flex;
+    height: 100vh; /* Full height of the viewport */
+    justify-content: space-between; /* Space between the images */
+    padding: 20px; /* Add padding around the container */
+}
+
+.image-container {
+    flex: 1; /* Each image container takes equal space */
+    position: relative; /* Positioning for the button */
+    margin: 0 10px; /* Space between the images */
+}
+
+.image-container img {
+    width: 95%; /* Make the image fill the container */
+    height: 95%; /* Make the image fill the container */
+    object-fit: cover; /* Maintain aspect ratio and cover the area */
+    border-radius: 8px; /* Optional: rounded corners for images */
+}
+
+.button {
+    display: block; /* Make the button a block element */
+    margin-top: 5px; /* Space between the image and the button */
+    padding: 8px 16px; /* Adjust padding for a shorter button */
+    background-color: rgba(0, 123, 255, 0.8); /* Semi-transparent background */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center; /* Center text in the button */
+    transition: transform 0.3s, background-color 0.3s; /* Transition for hover effects */
+    width: 100%; /* Set a fixed width for the button */
+    max-width: 190px; /* Optional: maximum width for the button */
+    margin-left: auto; /* Center the button horizontally */
+    margin-right: auto; /* Center the button horizontally */
+}
+
+.button:hover {
+    background-color: rgba(0, 123, 255, 1); /* Solid background on hover */
+    transform: translateY(-5px); /* Move the button up on hover */
+}

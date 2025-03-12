@@ -1,0 +1,130 @@
+{
+    "home": "Home",
+    "services": "Services",
+    "prices": "Prices",
+    "about_us": "About Us",
+    "location": "Location",
+    "switch_language": "Switch to Arabic",
+    "price_list": "OCEAN Swimming Academy Price List",
+    "category": "Category",
+    "description": "Description",
+    "private_session": "Private Session",
+    "group_session": "Group Session",
+    "gym_price": "Gym Price",
+    "karate": "Karate",
+    "footer_text": "© 2025 Ocean Academy. All rights reserved.Developed by Ibrahim Abdallah(76466642)",
+    "swim_service":"Swimming Services",
+    "gym_service":"Ladies Gym Info",
+    "popup_title":"Thank You for Joining Us!",
+    "location_popup_title": "Select Your Location",
+    "location_popup_message": "Please choose a location to proceed:",
+    "location1":"Bir Hassan",
+    "location2":"Hamra",
+    "go":"go",
+    
+       "welcome": "Welcome to Ocean Academy Ladies Gym",
+    "opening_hours": "Opening Hours",
+    "opening_hours_info": "The gym is open from 9 AM to 8 PM every day.",
+    "fitness_classes": "Fitness Classes Schedule",
+    "fitness_classes_info": "Our fitness classes are available from 9:30 AM to 10:30 AM and 7 PM to 8 PM, Monday to Friday.",
+    "day": "Day",
+    "class": "Class",
+    "time": "Time",
+    "monday": "Monday",
+    "tuesday": "Tuesday",
+    "wednesday": "Wednesday",
+    "thursday": "Thursday",
+    "friday": "Friday",
+    "facilities": "Facilities",
+    "facilities_info": "All machines are available for use during gym hours.",
+     "next_image": "Next Image",
+     
+        "about-title": "About Ocean Academy",
+        "about-description": "Welcome to Ocean Academy, a premier institution dedicated to teaching swimming and fitness to individuals of all ages, including women, men, and children. Our academy is built on the foundation of safety, community, and excellence, providing a nurturing environment for everyone to learn and thrive.",
+        "mission-title": "Our Mission",
+        "mission-description": "At Ocean Academy, our mission is to create a safe and supportive space where individuals can learn swimming and engage in fitness activities. We aim to promote health, confidence, and a sense of belonging among our members, regardless of age or skill level.",
+        "vision-title": "Our Vision",
+        "vision-description": "We envision being the leading academy for swimming and fitness, recognized for our commitment to excellence, safety, and empowerment. Our goal is to inspire everyone to embrace an active lifestyle and achieve their personal fitness goals.",
+       "values-title": "Our Values",
+    "values": {
+        "inclusivity": "Inclusivity: We welcome individuals of all ages and backgrounds to join our programs.",
+        "empowerment": "Empowerment: We empower everyone to take charge of their health and fitness.",
+        "community": "Community: We foster a sense of community and support among our members.",
+        "excellence": "Excellence: We strive for excellence in all our programs and services.",
+        "safety": "Safety: We prioritize the safety and well-being of our members above all."
+   
+    },
+        "join-title": "Join Us Today!",
+        "join-description": "Become a part of our vibrant community and start your journey towards health and wellness. We offer a variety of swimming and fitness programs tailored to meet the needs of individuals of all ages.",
+    
+        "class_names": {
+            "cardio": "Cardio",
+            "power": "Power",
+            "steps": "Steps",
+            "shaping": "Shaping",
+            "zumba": "Zumba"
+        },
+       
+    
+    
+    "image_description": {
+        "star": "If you ever feel tired or need to stay safe in the water, you can float like a starfish to stay above the surface. First, stay calm and take a deep breath, as relaxing helps you float better. Then, slowly lie on your back, keeping your face up toward the sky. Spread your arms and legs wide like a starfish to help your body stay balanced on the water. Breathe slowly and stay as still as possible, allowing the water to support you. Practicing in shallow water with an adult nearby will help you feel more confident. This simple floating trick can help you rest and stay safe until help arrives.",
+        "freestyle": "Teaching freestyle swimming starts with body position, ensuring the swimmer stays horizontal and streamlined in the water. Next, they learn proper kicking, using a steady flutter kick from the hips while keeping legs relaxed. Arm movements follow, with alternating strokes that enter the water smoothly and pull back in a controlled motion. Breathing is crucial, so they practice turning their head to the side to inhale without disrupting their rhythm. Coordination of arms, legs, and breathing is then refined through drills and repetition. Finally, continuous practice builds endurance and confidence, helping swimmers move efficiently through the water.",
+        "backstroke": "Teaching backstroke swimming begins with helping swimmers feel comfortable floating on their backs. We start by practicing a steady flutter kick, ensuring the legs stay straight and move from the hips. Next, we introduce arm movements, teaching swimmers to lift one arm at a time, extend it overhead, and pull the water back in a circular motion. Proper breathing is emphasized, as the face stays above water, allowing for natural and relaxed breaths. Coordination between kicking and arm strokes is key, so we encourage slow, rhythmic movements before increasing speed. With practice and guidance, swimmers develop confidence and improve their backstroke technique.",
+        "breaststroke": "Teaching breaststroke starts with a flat, streamlined body position. Swimmers learn the frog-like kick by bending their knees, pushing their feet outward, and gliding. Arm movements involve extending forward, sweeping outward, and bringing the hands together. Breathing is synchronized by inhaling as the head lifts and exhaling while gliding. Smooth coordination of arms, legs, and breathing is essential for efficiency. With practice, swimmers develop a strong and controlled breaststroke technique.",
+        "butterfly": "Teaching butterfly swimming starts with learning the dolphin kick, where the legs move together in a wave-like motion from the hips. Swimmers then practice the arm movement, bringing both arms forward together and pulling the water back in a circular motion. Timing and coordination are key, so we teach them to kick once when their arms enter the water and again when they pull back. Proper breathing is taught by lifting the head forward during the arm recovery. We start with drills like single-arm strokes and underwater kicks before practicing the full stroke. With patience and practice, swimmers build strength and master the butterfly technique."
+    },
+   
+    "exchange_rate_label": "Enter Exchange Rate (1 USD to LBP): ",
+    "exchange_rate_placeholder": "Enter exchange rate",
+    "price_descriptions": {
+        "private_session_1": "1 Session",
+        "private_session_4": "4 Sessions",
+        "private_session_8": "8 Sessions",
+        "private_session_2_persons": "1 Session (2 Persons)",
+        "group_session_4": "4 Sessions",
+        "group_session_8": "8 Sessions",
+        "group_session_12": "12 Sessions",
+        "gym_price_1_month": "1 Month",
+        "gym_price_10_visit": "10 Visit",
+        "gym_price_pt_session": "PT Session",
+        "karate_1_month": "1 Month"
+    },
+    
+       
+        "join_button": "Join Us Today!",
+        "featured_programs": "Featured Programs",
+        "swimming_lessons": "Swimming Lessons",
+      
+        "karate_classes": "Karate Classes",
+        "testimonial_1": "Ocean Academy has transformed my swimming skills!  - Sarah",
+
+        "testimonial_2": "The fitness classes are fun and engaging! - Aya",
+        "call_to_action": "Join Us Today!",
+        "sign_up": "Sign Up",
+        "popup_message": " We are excited to have you on board. Please scroll down and continue the signup process to continue your tour among our website.",
+        
+            "testimonials_title": "Parents And Students Feedback",
+           
+            "hidden_feedback_1": "I feel more confident in the water now!",
+          
+            "hidden_feedback_2": "I love the variety of classes offered!",
+            "testimonial_3": "The instructors are incredibly supportive and knowledgeable! - John",
+            "hidden_feedback_3": "They really care about our progress!",
+            "testimonial_4": "My child has gained so much confidence in the water! - Emily",
+            "hidden_feedback_4": "The instructors are amazing with kids!",
+            "testimonial_5": "The community at Ocean Academy is welcoming and encouraging! - Mark",
+            "hidden_feedback_5": "I made so many friends here!",
+           "call_to_action_description": "Sign up now to start your journey towards health and wellness.",
+           "sign_up_button":"Sign Up",
+            "welcome_message":"Your journey to fitness and swimming excellence starts here",
+           " swimming_lessons": "Swimming Lessons",
+            "swimming_lessons_description": "Join our swimming lessons for all ages and skill levels.",
+            
+            "fitness_classes_description": "Participate in our diverse fitness classes designed for everyone.",
+           
+           " karate_classes_description": "Learn self-defense and discipline through our karate classes."
+      
+        
+       
+}

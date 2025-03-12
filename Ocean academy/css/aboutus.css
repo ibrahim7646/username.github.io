@@ -1,0 +1,62 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4; /* Light background for better contrast */
+    margin: 0;
+    padding: 0;
+}
+
+.about-container {
+    max-width: 800px; /* Limit the width for better readability */
+    margin: 40px auto; /* Add margin for spacing */
+    padding: 30px; /* Increased padding for a more spacious layout */
+    background: rgb(209, 206, 206); /* White background for the content area */
+    border-radius: 10px; /* Slightly rounded corners */
+    box-shadow: 0 4px 20px rgba(14, 13, 13, 0.1); /* Soft shadow for depth */
+}
+
+h1 {
+    text-align: center; /* Center the main title */
+    color: #007BFF; /* Primary color for headings */
+    margin-bottom: 20px; /* Space below the heading */
+    font-size: 2.5em; /* Larger font size for emphasis */
+}
+
+h2 {
+    color: blue; /* Darker color for subheadings */
+    margin-top: 30px; /* Space above subheadings */
+    font-size: 1.8em; /* Slightly larger font size for subheadings */
+}
+
+p {
+    line-height: 1.8; /* Increased line height for better readability */
+    color: #555; /* Dark gray color for text */
+    margin-bottom: 20px; /* Space below paragraphs */
+}
+
+.mission-vision {
+    margin: 30px 0; /* Space around mission and vision sections */
+}
+
+.values {
+    margin: 30px 0; /* Space around values section */
+}
+
+.values ul {
+    list-style-type: disc; /* Bullet points for list items */
+    padding-left: 20px; /* Indentation for list */
+}
+
+.gallery {
+    margin-top: 30px; /* Space above the gallery section */
+    text-align: center; /* Center the gallery content */
+}
+
+.gallery-image {
+    width: 100%; /* Full width for images */
+    height: auto; /* Maintain aspect ratio */
+    margin: 10px 0; /* Space around images */
+    border-radius: 10px; /* Rounded corners for images */
+}
+.footer-text{
+    color: #f4f4f4;
+}
